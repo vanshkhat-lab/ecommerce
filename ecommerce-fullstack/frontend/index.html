@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">ShopEasy</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a id="orders-link" href="orders.html">My Orders</a>
+      <a id="login-link" href="login.html">Login</a>
+      <button id="logout-btn" class="link-button hidden">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Simple shopping.</h1>
+        <a class="button" href="products.html">Browse Products</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Featured Products</h2>
+      <div id="featured-products" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer>ShopEasy learning project</footer>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

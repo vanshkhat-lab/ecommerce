@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">ShopEasy</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main class="form-page">
+    <form id="register-form" class="form-card">
+      <p class="eyebrow">CREATE ACCOUNT</p>
+      <h1>Register</h1>
+
+      <label>Name</label>
+      <input id="name" required>
+
+      <label>Email</label>
+      <input id="email" type="email" required>
+
+      <label>Password</label>
+      <input id="password" type="password" minlength="6" required>
+
+      <button class="button" type="submit">Create Account</button>
+      <p id="message" class="message"></p>
+
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

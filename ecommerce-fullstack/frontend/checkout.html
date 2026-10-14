@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">ShopEasy</a>
+    <nav>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="orders.html">My Orders</a>
+      <button id="logout-btn" class="link-button hidden">Logout</button>
+    </nav>
+  </header>
+
+  <main class="form-page">
+    <form id="checkout-form" class="form-card wide">
+      <p class="eyebrow">CHECKOUT</p>
+      <h1>Shipping Details</h1>
+
+      <label>Full Name</label>
+      <input id="fullName" required>
+
+      <label>Phone</label>
+      <input id="phone" required>
+
+      <label>Address</label>
+      <textarea id="address" required></textarea>
+
+      <label>City</label>
+      <input id="city" required>
+
+      <label>PIN Code</label>
+      <input id="pincode" required>
+
+      <div id="checkout-total" class="checkout-total"></div>
+
+      <button class="button" type="submit">Place Order</button>
+      <p id="message" class="message"></p>
+    </form>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
